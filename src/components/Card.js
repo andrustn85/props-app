@@ -1,16 +1,19 @@
 import React from "react";
+import Avatar from "../components/Avatar"
+import Bottom from "../components/Bottom"
 
 export default function Card(props) {
     return (
         <div className="card">
         <div className="top">
+        <p className="name"> {props.id} </p>
             <h2 className="name"> {props.name} </h2>
-            <img className="circle-img" src={props.img} alt="#" />
+            <Avatar img={props.img}  />
             </div>
-            <div className="bottom">
-            <p className="info"> {props.contactNumber} </p>
-            <p className="info"> <span> {props.email} </span> </p>
-            </div>
+            <Bottom 
+                contactNumber={props.contactNumber} 
+                email={props.email}
+            />
         </div>
     )
 }
