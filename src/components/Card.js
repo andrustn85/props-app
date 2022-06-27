@@ -5,7 +5,7 @@ export default function Card(props) {
         <div className="card">
         <div className="top">
             <h2 className="name"> {props.name} </h2>
-            <img className="circle-img" src={props.img} />
+            <img className="circle-img" src={props.img} alt="#" />
             </div>
             <div className="bottom">
             <p className="info"> {props.contactNumber} </p>
